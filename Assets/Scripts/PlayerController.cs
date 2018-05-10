@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerContro : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
-	// Use this for initialization
+	public float moveSpeed;
+
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		float unit = moveSpeed * Time.deltaTime;
+		transform.Translate(new Vector2(Input.GetAxisRaw("Horizontal") * unit, Input.GetAxisRaw("Vertical") * unit));
 	}
 }
