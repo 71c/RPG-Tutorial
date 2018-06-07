@@ -5,17 +5,16 @@ using UnityEngine;
 public class PlayerStartPoint : MonoBehaviour {
 
 	private PlayerController player;
-	private CameraController theCamera;
+	private CameraController cam;
+
+	public Vector2 startDirection;
 
 	void Start () {
 		player = FindObjectOfType<PlayerController>();
 		player.transform.position = transform.position;
+		//player.lastMove = startDirection;
 
-		theCamera = FindObjectOfType<CameraController>();
-		theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, camera.transform.position.z);
-	}
-	
-	void Update () {
-		
+		cam = FindObjectOfType<CameraController>();
+		cam.transform.position = new Vector3(transform.position.x, transform.position.y, GetComponent<Camera>().transform.position.z);
 	}
 }
