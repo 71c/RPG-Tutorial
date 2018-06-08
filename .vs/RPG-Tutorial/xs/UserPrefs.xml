@@ -5,7 +5,7 @@
       <File FileName="Assets/Scripts/CameraController.cs" Line="9" Column="21" />
       <File FileName="Assets/Scripts/LoadNewArea.cs" Line="15" Column="1" />
       <File FileName="Assets/Scripts/PlayerStartPoint.cs" Line="15" Column="38" />
-      <File FileName="Assets/Scripts/SlimeCntroller.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/SlimeCntroller.cs" Line="67" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
